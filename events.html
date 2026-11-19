@@ -1,0 +1,481 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>KCC School Events</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- KCC EVENTS PAGE STYLE -->
+  <style>
+    .kcc-events-page {
+      min-height: calc(100vh - 80px);
+      background: #082B50;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .kcc-poster {
+      width: 100%;
+      max-width: 1100px;
+      background: #16466D;
+      border: 3px solid #FFD700;
+      border-radius: 18px;
+      padding: 18px 25px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    }
+
+    .kcc-poster-title {
+      text-align: center;
+      margin-bottom: 14px;
+    }
+
+    .kcc-poster-title h1 {
+      color: #FFD700;
+      font-size: 30px;
+      font-weight: 900;
+      margin-bottom: 5px;
+    }
+
+    .kcc-poster-title p {
+      color: white;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .kcc-collage {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .kcc-event {
+      background: #FFFFFF;
+      border: 2px solid #FFD700;
+      border-radius: 12px;
+      min-height: 145px;
+      padding: 12px 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .kcc-event:hover {
+      background: #FFF8DC;
+      transform: scale(1.02);
+    }
+
+    .kcc-event-number {
+      color: #B8860B;
+      font-size: 25px;
+      font-weight: 900;
+    }
+
+    .kcc-event-category {
+      color: #B8860B;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin: 3px 0;
+    }
+
+    .kcc-event h3 {
+      color: #082B50;
+      font-size: 16px;
+      font-weight: 900;
+      margin: 5px 0;
+    }
+
+    .kcc-event p {
+      color: #555;
+      font-size: 11px;
+      margin: 0;
+    }
+
+    .kcc-poster-footer {
+      text-align: center;
+      color: #FFD700;
+      font-size: 14px;
+      font-weight: 900;
+      margin-top: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .kcc-events-page {
+        min-height: auto;
+        padding: 15px 10px;
+      }
+
+      .kcc-poster {
+        padding: 15px 10px;
+      }
+
+      .kcc-poster-title h1 {
+        font-size: 23px;
+      }
+
+      .kcc-collage {
+        gap: 8px;
+      }
+
+      .kcc-event {
+        min-height: 125px;
+        padding: 8px 5px;
+      }
+
+      .kcc-event h3 {
+        font-size: 12px;
+      }
+
+      .kcc-event-category {
+        font-size: 8px;
+      }
+    }
+  </style>
+
+</head>
+
+<body class="events-page">
+
+  <!-- KCC HEADER AND NAVIGATION -->
+  <header id="header" class="header d-flex align-items-center sticky-top">
+
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <!-- KCC LOGO -->
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">KCC</h1>
+      </a>
+
+      <!-- NAVIGATION -->
+      <nav id="navmenu" class="navmenu">
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="leaders.html">Leaders</a></li>
+          <li><a href="events.html" class="active">Events</a></li>
+          <li><a href="enrolment form.html">Enrolment Form</a></li>
+
+          <li class="dropdown">
+            <a href="#">
+              <span>Dropdown</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
+
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+
+              <li class="dropdown">
+                <a href="#">
+                  <span>Deep Dropdown</span>
+                  <i class="bi bi-chevron-down toggle-dropdown"></i>
+                </a>
+
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
+      </nav>
+
+      <a class="btn-getstarted" href="courses.html">Get Started</a>
+
+    </div>
+  </header>
+  <!-- END KCC HEADER -->
+
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <!-- KCC EVENTS POSTER -->
+    <section class="kcc-events-page">
+
+      <div class="kcc-poster">
+
+        <!-- POSTER HEADING -->
+        <div class="kcc-poster-title">
+          <h1>KCC SCHOOL EVENTS</h1>
+
+          <p>
+            Moments That Inspire, Unite, and Celebrate.
+            Experience the Best of KCC!
+          </p>
+        </div>
+
+        <!-- FOUR EVENTS COLLAGE -->
+        <div class="kcc-collage">
+
+          <!-- EVENT 1 -->
+          <div class="kcc-event">
+            <div class="kcc-event-number">01</div>
+            <div class="kcc-event-category">STUDENT LIFE</div>
+            <h3>STUDENT ORIENTATION</h3>
+            <p>Date to be announced</p>
+          </div>
+
+          <!-- EVENT 2 -->
+          <div class="kcc-event">
+            <div class="kcc-event-number">02</div>
+            <div class="kcc-event-category">SPORTS AND WELLNESS</div>
+            <h3>KCC SPORTS FEST</h3>
+            <p>Date to be announced</p>
+          </div>
+
+          <!-- EVENT 3 -->
+          <div class="kcc-event">
+            <div class="kcc-event-number">03</div>
+            <div class="kcc-event-category">SCHOOL CELEBRATION</div>
+            <h3>FOUNDATION DAY</h3>
+            <p>Date to be announced</p>
+          </div>
+
+          <!-- EVENT 4 -->
+          <div class="kcc-event">
+            <div class="kcc-event-number">04</div>
+            <div class="kcc-event-category">LEARNING AND DEVELOPMENT</div>
+            <h3>EDUCATIONAL SEMINAR</h3>
+            <p>Date to be announced</p>
+          </div>
+
+        </div>
+
+        <!-- POSTER FOOTER -->
+        <div class="kcc-poster-footer">
+          BE PART OF THE KCC EXPERIENCE!
+        </div>
+
+      </div>
+
+    </section>
+    <!-- END KCC EVENTS POSTER -->
+
+  </main>
+
+
+  <!-- SCROLL TOP -->
+  <a href="#" id="scroll-top"
+     class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- PRELOADER -->
+  <div id="preloader"></div>
+
+  <!-- VENDOR JS FILES -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- MAIN JS -->
+  <script src="assets/js/main.js"></script>
+
+
+<div class="footer-contact pt-3">
+
+  <p>
+    <a href="https://www.bing.com/maps/default.aspx?v=2&where1=9.98982%2C122.81345"
+       target="_blank"
+       style="color: inherit;">
+      Guanzon St., Brgy. 1, Kabankalan,
+      Philippines, 6111
+    </a>
+  </p>
+
+  <p class="mt-3">
+    <strong>Email:</strong>
+    <span>
+      <a href="mailto:kcc_1927@yahoo.com">
+        kcc_1927@yahoo.com
+      </a>
+    </span>
+  </p>
+
+  <p>
+    <strong>Website:</strong>
+    <span>
+      <a href="https://kcc.edu.ph/" target="_blank">
+        kcc.edu.ph
+      </a>
+    </span>
+  </p>
+
+  <p>
+    <strong>Facebook:</strong>
+    <span>
+      <a href="https://web.facebook.com/KCCInc1927/supporters/"
+         target="_blank">
+        Kabankalan Catholic College, Inc.
+      </a>
+    </span>
+  </p>
+
+</div>
+
+          
+<div class="social-links d-flex mt-4">
+
+  <!-- YouTube -->
+  <a href="http://www.youtube.com/@kabankalancatholiccollege4743"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="YouTube">
+    <i class="bi bi-youtube"></i>
+  </a>
+
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/KCCInc1927"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Facebook">
+    <i class="bi bi-facebook"></i>
+  </a>
+
+</div>
+
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        
+<div class="col-lg-2 col-md-3 footer-links">
+  <h4>Quick Links</h4>
+  <ul>
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About KCC</a></li>
+    <li><a href="#why-kcc">Why Choose KCC</a></li>
+    <li><a href="#courses">Academic Programs</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+</div>
+
+
+        
+<div class="col-lg-4 col-md-12 footer-newsletter">
+
+  <h4>Stay Connected with KCC</h4>
+
+  <p>
+    Follow Kabankalan Catholic College, Inc. on our official
+    social media pages to stay updated with school news,
+    announcements, and activities.
+  </p>
+
+  <div class="d-flex gap-3 mt-3">
+
+    <!-- YouTube -->
+    <a href="http://www.youtube.com/@kabankalancatholiccollege4743"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="KCC YouTube">
+      <i class="bi bi-youtube"></i>
+      YouTube
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/KCCInc1927"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="KCC Facebook">
+      <i class="bi bi-facebook"></i>
+      Facebook
+    </a>
+
+  </div>
+
+</div>
+
+</div>
+</div>
+
+    
+<div class="container copyright text-center mt-4">
+
+  <p>
+    © <span>Copyright</span>
+    <strong class="px-1 sitename">
+      Kabankalan Catholic College, Inc.
+    </strong>
+    <span>All Rights Reserved</span>
+  </p>
+
+  <div class="credits">
+    Designed for Kabankalan Catholic College, Inc.
+  </div>
+
+</div>
+
+  
+</footer>
+
+<!-- Scroll Top -->
+<a href="#" id="scroll-top"
+   class="scroll-top d-flex align-items-center justify-content-center">
+  <i class="bi bi-arrow-up-short"></i>
+</a>
+
+<!-- Preloader -->
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
