@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Enrollment Form - KCC</title>
+  <meta name="description" content="Kabankalan Catholic College Enrollment Form">
+  <meta name="keywords" content="KCC, Enrollment, Student Application">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    /* Enrollment Background */
+    .enrollment-section {
+      background: linear-gradient(135deg, #061B38, #0B315A, #16466C);
+      padding: 70px 20px;
+    }
+
+    /* Heading */
+    .enrollment-heading {
+      text-align: center;
+      color: #FFF4C2;
+      margin-bottom: 40px;
+    }
+
+    .enrollment-heading h1 {
+      font-size: 38px;
+      font-weight: 800;
+      color: #FFF0A8;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .enrollment-heading p {
+      color: #F8EFCB;
+      font-size: 16px;
+    }
+
+    /* Form Card */
+    .enrollment-card {
+      max-width: 850px;
+      margin: auto;
+      background: #FFFBE8;
+      padding: 40px;
+      border-radius: 18px;
+      border-top: 7px solid #F2D675;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+    }
+
+    .enrollment-card h2 {
+      color: #082B50;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .enrollment-card .intro {
+      text-align: center;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .enrollment-card label {
+      display: block;
+      color: #082B50;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .enrollment-card input,
+    .enrollment-card select,
+    .enrollment-card textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #D8C98B;
+      border-radius: 8px;
+      background: #FFFFFF;
+      margin-bottom: 20px;
+      outline: none;
+    }
+
+    .enrollment-card input:focus,
+    .enrollment-card select:focus,
+    .enrollment-card textarea:focus {
+      border-color: #B99B36;
+      box-shadow: 0 0 5px rgba(185,155,54,0.3);
+    }
+
+    .enrollment-card textarea {
+      resize: vertical;
+    }
+
+    /* Submit Button */
+    .enroll-btn {
+      width: 100%;
+      background: #082B50;
+      color: #FFF0A8;
+      border: 2px solid #E8CE70;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 17px;
+      font-weight: 800;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .enroll-btn:hover {
+      background: #E8CE70;
+      color: #082B50;
+    }
+
+    .enrollment-note {
+      text-align: center;
+      color: #F8EFCB;
+      margin-top: 25px;
+      font-size: 14px;
+    }
+
+    /* Mobile Design */
+    @media (max-width: 576px) {
+      .enrollment-card {
+        padding: 25px 18px;
+      }
+
+      .enrollment-heading h1 {
+        font-size: 29px;
+      }
+    }
+  </style>
+
+</head>
+
+<body class="pricing-page">
+
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center sticky-top">
+
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <!-- Logo -->
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">KCC</h1>
+      </a>
+
+      <!-- Navigation -->
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="leaders.html">Leaders</a></li>
+          <li><a href="enrolment form.html" class="active">Enrollment Form</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="pricing.html">Enroll Now</a>
+
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+
+    <section class="enrollment-section">
+
+      <div class="container">
+
+        <!-- Page Heading -->
+        <div class="enrollment-heading" data-aos="fade-up">
+
+          <h1>STUDENT ENROLLMENT</h1>
+
+          <p>
+            Begin Your Journey with Kabankalan Catholic College, Inc.
+          </p>
+
+        </div>
+
+        <!-- Enrollment Form -->
+        <div class="enrollment-card" data-aos="fade-up" data-aos-delay="200">
+
+          <h2>Enrollment Application Form</h2>
+
+          <p class="intro">
+            Please complete the information below to apply for admission.
+          </p>
+
+          <form action="#" method="post">
+
+            <div class="row">
+
+              <!-- First Name -->
+              <div class="col-md-6">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname"
+                  placeholder="Enter your first name" required>
+              </div>
+
+              <!-- Last Name -->
+              <div class="col-md-6">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname"
+                  placeholder="Enter your last name" required>
+              </div>
+
+              <!-- Middle Name -->
+              <div class="col-md-6">
+                <label for="middlename">Middle Name</label>
+                <input type="text" id="middlename" name="middlename"
+                  placeholder="Enter your middle name">
+              </div>
+
+              <!-- Birthdate -->
+              <div class="col-md-6">
+                <label for="birthdate">Date of Birth</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+              </div>
+
+              <!-- Gender -->
+              <div class="col-md-6">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                  <option value="">Select Gender</option>
+                  <option value="Female">Female</option>
+                  <option value="Male">Male</option>
+                  <option value="Prefer not to say">Prefer not to say</option>
+                </select>
+              </div>
+
+              <!-- Year Level -->
+              <div class="col-md-6">
+                <label for="yearlevel">Year Level</label>
+                <select id="yearlevel" name="yearlevel" required>
+                  <option value="">Select Year Level</option>
+                  <option>Grade 11</option>
+                  <option>Grade 12</option>
+                  <option>1st Year College</option>
+                  <option>2nd Year College</option>
+                  <option>3rd Year College</option>
+                  <option>4th Year College</option>
+                </select>
+              </div>
+
+              <!-- Email -->
+              <div class="col-md-6">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email"
+                  placeholder="example@gmail.com" required>
+              </div>
+
+              <!-- Contact -->
+              <div class="col-md-6">
+                <label for="phone">Contact Number</label>
+                <input type="tel" id="phone" name="phone"
+                  placeholder="Enter your contact number" required>
+              </div>
+
+              <!-- Course -->
+              <div class="col-12">
+                <label for="course">Preferred Course / Program</label>
+                <select id="course" name="course" required>
+                  <option value="">Select Your Course</option>
+                  <option>Bachelor of Science in Information Technology</option>
+                  <option>Other / To be confirmed with the school</option>
+                </select>
+              </div>
+
+              <!-- Address -->
+              <div class="col-12">
+                <label for="address">Complete Address</label>
+                <textarea id="address" name="address" rows="3"
+                  placeholder="Enter your complete address" required></textarea>
+              </div>
+
+              <!-- Additional Information -->
+              <div class="col-12">
+                <label for="message">Additional Information</label>
+                <textarea id="message" name="message" rows="3"
+                  placeholder="Write additional information (optional)"></textarea>
+              </div>
+
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="enroll-btn">
+              <i class="bi bi-send-fill"></i>
+              SUBMIT ENROLLMENT
+            </button>
+
+          </form>
+
+        </div>
+
+        <!-- Footer Text -->
+        <p class="enrollment-note">
+          Kabankalan Catholic College, Inc. | Your Future Starts Here
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="container text-center">
+      <p>
+        © Copyright <strong>Kabankalan Catholic College</strong>.
+        All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">KCC</span>
+          </a>
+          <p>
+    <a href="https://www.bing.com/maps/default.aspx?v=2&where1=9.98982%2C122.81345"
+       target="_blank"
+       style="color: inherit;">
+      Guanzon St., Brgy. 1, Kabankalan,
+      Philippines, 6111
+    </a>
+  </p>
+
+  <p class="mt-3">
+    <strong>Email:</strong>
+    <span>
+      <a href="mailto:kcc_1927@yahoo.com">
+        kcc_1927@yahoo.com
+      </a>
+    </span>
+  </p>
+
+  <p>
+    <strong>Website:</strong>
+    <span>
+      <a href="https://kcc.edu.ph/" target="_blank">
+        kcc.edu.ph
+      </a>
+    </span>
+  </p>
+
+  <p>
+    <strong>Facebook:</strong>
+    <span>
+      <a href="https://web.facebook.com/KCCInc1927/supporters/"
+         target="_blank">
+        Kabankalan Catholic College, Inc.
+      </a>
+    </span>
+  </p>
+
+</div>
+
+          
+<div class="social-links d-flex mt-4">
+
+  <!-- YouTube -->
+  <a href="http://www.youtube.com/@kabankalancatholiccollege4743"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="YouTube">
+    <i class="bi bi-youtube"></i>
+  </a>
+
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/KCCInc1927"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Facebook">
+    <i class="bi bi-facebook"></i>
+  </a>
+
+</div>
+
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        
+<div class="col-lg-2 col-md-3 footer-links">
+  <h4>Quick Links</h4>
+  <ul>
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About KCC</a></li>
+    <li><a href="#why-kcc">Why Choose KCC</a></li>
+    <li><a href="#courses">Academic Programs</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+</div>
+
+<div class="col-lg-4 col-md-12 footer-newsletter">
+
+  <h4>Stay Connected with KCC</h4>
+
+  <p>
+    Follow Kabankalan Catholic College, Inc. on our official
+    social media pages to stay updated with school news,
+    announcements, and activities.
+  </p>
+
+  <div class="d-flex gap-3 mt-3">
+
+    <!-- YouTube -->
+    <a href="http://www.youtube.com/@kabankalancatholiccollege4743"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="KCC YouTube">
+      <i class="bi bi-youtube"></i>
+      YouTube
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/KCCInc1927"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="KCC Facebook">
+      <i class="bi bi-facebook"></i>
+      Facebook
+    </a>
+
+  </div>
+<div class="container copyright text-center mt-4">
+
+  <p>
+    © <span>Copyright</span>
+    <strong class="px-1 sitename">
+      Kabankalan Catholic College, Inc.
+    </strong>
+    <span>All Rights Reserved</span>
+  </p>
+
+  <div class="credits">
+    Designed for Kabankalan Catholic College, Inc.
+  </div>
+
+</div>
+
+  
+</footer>
+
+<!-- Scroll Top -->
+<a href="#" id="scroll-top"
+   class="scroll-top d-flex align-items-center justify-content-center">
+  <i class="bi bi-arrow-up-short"></i>
+</a>
+
+<!-- Preloader -->
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
